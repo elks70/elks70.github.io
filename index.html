@@ -16,8 +16,13 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#3f6db9">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body class="ishome">
 	<div id="my-page">
@@ -54,9 +59,10 @@
 												<h1 class="h1logo">MadElks</h1>
 											</div>
 											<p>Какой нибудь текст который по своему объему будет занимать нужное количество строк. Тут должны быть несколько слов о нашей команде и бла-бла-бла. </p>
-
+											<div class="button-container">
 											<a href="#" role="button" class="button"> Узнать больше</a>
 											<a href="#" role="button" class="button-border"> Написать нам</a>
+											</div>
 
 										</div>
 
@@ -70,40 +76,295 @@
 
       <div id="my-content">
 				<section class="about-us">
-				<div class="container">
-					<div class="row">
-
-						<header class="col-xs-12 col-sm-12 col-md-12 text-center header-items">
-							<h1>О нас</h1>
-							<p class="lines">Несколько слов о нашей команде и специализации</p>
-							
-						</header>
-
-						<div class="col-xs-12 col-sm-12 col-md-6">
-
-
-
+					<div class="container">
+						<div class="row">
+							<header class="col-xs-12 col-sm-12 col-md-12 text-center header-items">
+								<h1>О нас</h1>
+								<p class="lines">Несколько слов о нашей команде и специализации</p>
+							</header>
+							<div class="col-xs-12 col-sm-12 col-md-6">
 								<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
-								Равным образом укрепление и развитие структуры способствует подготовки и реализации модели развития. Равным образом укрепление и развитие структуры способствует подготовки и реализации модели развития. Равным образом сложившаяся структура организации требуют от нас анализа соответствующий условий активизации.</p>
-
-					</div>
+									Равным образом укрепление и развитие структуры способствует подготовки и реализации модели развития. Равным образом укрепление и развитие структуры способствует подготовки и реализации модели развития. Равным образом сложившаяся структура организации требуют от нас анализа соответствующий условий активизации.</p>
+							</div>
 					<div class="col-xs-12 col-sm-12 col-md-6">
 						<figure>
 								<img src="img/sr3m.png" alt="Автомат пулемет СР3-М Вихрь и Активные наушники Impact">
 						</figure>
-
 					</div>
 				</div>
 			</div>
-
-
-
-			</section>
+		</section>
+		<div class="container-fluid">
+		<section class="photo-gallery">
+			<div class="container">
+				<div class="row">
+					<header class="col-xs-12 col-sm-12 col-md-12 text-center header-items">
+						<h1>Фотографии</h1>
+						<p class="lines">Фотографии с разных мероприятий</p>
+							<nav class="menu-gallery" >
+								<ul role="navigation" class="col-xs-12 col-sm-12 col-md-12 text-center ">
+									<li><a href="#">Все</a></li>
+									<li><a href="#">Соревнования</a></li>
+									<li><a href="#">Тренировки</a></li>
+									<li><a href="#">Игры</a></li>
+									<li><a href="#">Live</a></li>
+								</ul>
+							</nav>
+					</header>
+				</div>
+			</div>
+			<div class="row">
+  			<div class="page__container">
+      	<div class="photobox photo photobox_type4">
+        	<div class="photobox__previewbox">
+          	<img src="img/1_thumb.jpg" class="photobox__preview" alt="Preview">
+          	<span class="photobox__label">
+						Тренировки <br>
+						<small>Фотосессия для произвотеля снаряжения</small>
+					</span>
+        </div>
+      </div>
+      <div class="photobox photo photobox_type4">
+        <div class="photobox__previewbox">
+          <img src="img/10_thumb.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">
+						Тренировки<br>
+						<small>Подготовка</small>
+					</span>
+        </div>
+      </div>
+      <div class="photobox photo photobox_type4">
+        <div class="photobox__previewbox">
+          <img src="img/img_33.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">
+						Игры
+						<br>
+						<small>Типичное восресное утро</small>
+					</span>
+        </div>
+      </div>
+      <div class="photobox photo photobox_type4">
+        <div class="photobox__previewbox">
+          <img src="img/img_45.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">
+						Соревнования<br>
+						<small>AWC 2017</small>
+					</span>
+        </div>
+      </div>
+      <div class="photobox photo photobox_type4">
+        <div class="photobox__previewbox">
+          <img src="img/img_103.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">
+						Соревнования<br>
+						<small>AWC 2017</small>
+					</span>
+        </div>
+      </div>
+      <div class="photobox photo photobox_type4">
+        <div class="photobox__previewbox">
+          <img src="img/img_28.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">
+						Live<br>
+						<small>Интервью для "Беларусь 4"</small>
+					</span>
+        </div>
+      </div>
 		</div>
+</div>
+</section>
+<article class="col-xs-12 col-sm-12 col-md-12 text-center instagram ">
+	<p>Хотите увидеть больше фото? Посетите наш Instagram</p>
+	<div class="button-container">
+	<a href="#" role="button" class="button"> @MAD.ELKS</a>
+	</div>
+</article>
+</div>
+
+<div class="container-fluid">
+
+
+		</header>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+
+	    <div class="carousel-inner">
+
+	      <div class="item active">
+	        <div class="opct">
+	         	<img src="img/122_thumb.jpg" alt="Los Angeles" style="width:100%;">
+					 </div>
+	        <div class="carousel-caption">
+						<h1>Второе место</h1>
+	          <h3>Санкт-Петербург</h3>
+	          <h3>AWC Winter Edition <p> <data value="2017"></data>2017</p></h3>
+	        </div>
+	      </div>
+
+	      <div class="item">
+	        <div class="opct">
+	         	<img src="img/123_thumb.jpg" alt="Chicago" style="width:100%;">
+					 </div>
+	        <div class="carousel-caption">
+							<h1>Второе место</h1>
+							<h3>Минск</h3>
+  	          <h3>Соревнования ATAC <p> <data value="2016"></data>2016</p></h3>
+
+
+	        </div>
+	      </div>
+
+	      <div class="item">
+	        <div class="opct">
+	         	<img src="img/124_thumb.jpg" alt="New York" style="width:100%;">
+					 </div>
+	        <div class="carousel-caption">
+						<h1>Первое место</h1>
+						<h3>Санкт-Петербург</h3>
+						<h3>AWC Summer Edition <p> <data value="2017"></data>2017</p></h3>
+	        </div>
+	      </div>
+
+	    </div>
+
+
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Назад</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Следующую </span>
+	    </a>
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="row ">
+			<div class="">
+				<a href="#" class="logoelks"><img src="img/elkslogo.svg" alt="Логотип: AirsoftTeam MadElks"></a>
+			</div>
+			<header class="col-xs-12 col-sm-12 col-md-12 text-center header-items">
+				<h1>Специализация</h1>
+				<p class="lines">О нашей специализации и интересах</p>
+			</header>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Штурм</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Штурмовой альпинизм</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Освобождение заложников</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Оборона</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Сопровождение</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 block">
+				<h3>Военно-медицинская подготовка</h3>
+				<p>С другой стороны сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.
+					</p>
+			</div>
+
+
+			<header class="col-xs-12 col-sm-12 col-md-12 text-center header-items">
+				<h1>Участники</h1>
+				<p class="lines">Некоторые участники нашей команды из основного состава</p>
+			</header>
+
+<section class="section-overlay ">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+
+				<div class="partners owl-carousel">
+
+					<div class="partner">
+						<figure>
+							<img src="img/team-1.jpg" alt="Партнер	">
+							<div class="description">
+								<h4>Леонид Маслов</h4>
+								<p>Командир</p>
+							</div>
+						</figure>
+					</div>
+
+					<div class="partner">
+						<figure>
+							<img src="img/team-2.jpg" alt="Партнер	">
+							<div class="description ">
+								<h4>Федор Сумки</h4>
+								<p>Зам. Ком</p>
+							</div>
+						</figure>
+					</div>
+
+					<div class="partner">
+						<figure>
+							<img src="img/team-3.jpg" alt="Партнер	">
+							<div class="description">
+								<h4>Кузьма Воронов</h4>
+								<p>Техник</p>
+							</div>
+						</figure>
+					</div>
+
+					<div class="partner">
+						<figure>
+							<img src="img/team-4.jpg" alt="Партнер	">
+							<div class="description">
+								<h4>Влад Лопатюк</h4>
+								<p>Боец</p>
+							</div>
+						</figure>
+					</div>
+
+					<div class="partner">
+						<figure>
+							<img src="img/team-5.jpg" alt="Партнер	">
+							<div class="description ext-center ">
+								<h4>Радислав Фомичёв</h4>
+								<p>Боец</p>
+							</div>
+						</figure>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
 
       <div id="my-footer"></div>
 
-  </div>
+
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
